@@ -40,7 +40,7 @@ const Contact = () => {
       if (formData.enquiryType) tags.push(formData.enquiryType);
 
       // Send to backend API
-      const response = await fetch('https://plat-web-api.offee.in/api/contact', {
+      const response = await fetch('https://platskills.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
