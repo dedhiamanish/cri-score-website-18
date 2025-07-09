@@ -9,7 +9,7 @@ const AdminContacts = () => {
   useEffect(() => {
     if (!token) return;
     setLoading(true);
-    fetch("https://platskills.com/api/admin/contacts", {
+    fetch("https://platskills.com/web-api/admin/contacts", {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then(res => {
